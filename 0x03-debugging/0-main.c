@@ -1,63 +1,16 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
-* main - causes an infinite loop
-* Return: 0
-*/
+  * main - Test function for positive or negative
+  * Return: 0
+  */
 
 int main(void)
 {
 int i;
 
-printf("Infinite loop incoming :(\n");
-
 i = 0;
-/*
-*while (i < 10)
-*{
-* putchar(i);
-*}
-*/
-printf("Infinite loop avoided! \\o/\n");
+positive_or_negative(i);
 
 return (0);
-}
-
-
-Task 2 "2-largest_number.c"
-
-Ans:
-
-#include "main.h"
-
-/**
- * largest_number - returns the largest of 3 numbers
- * @a: first integer
- * @b: second integer
- * @c: third integer
- * Return: largest number
- */
-
-int largest_number(int a, int b, int c)
-{
-int largest;
-
-if (a > b && a > c)
-{
-    largest = a;
-}
-else if (b > c && b > a)
-{
-    largest = b;
-}
-else if (c > b)
-{
-    largest = c;
-}
-else
-{
-    largest = b;
-}
-
-return (largest);
 }
